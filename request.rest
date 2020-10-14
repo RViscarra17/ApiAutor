@@ -1,0 +1,8 @@
+### POST Autor
+POST http://127.0.0.1:8000/autors
+Content-Type: application/json
+
+{
+    "nombre": "prueba",
+    "apellido": "prueba"
+}
