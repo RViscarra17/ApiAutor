@@ -1,5 +1,5 @@
 ### POST Autor
-POST http://127.0.0.1:8000/autors
+POST http://127.0.0.1:8000/api/autors
 Content-Type: application/json
 
 {
