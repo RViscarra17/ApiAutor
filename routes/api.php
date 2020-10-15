@@ -19,7 +19,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/autors', 'AutorController@index')->name('autors.index');
-Route::get('/autors/{autor}', 'AutorController@show')->name('autors.show');
 Route::post('/autors', 'AutorController@store')->name('autors.store');
-Route::put('/autors/{autor}', 'AutorController@update')->name('autors.update');
-Route::delete('autors/{autor}', 'AutorController@destroy')->name('autors.destroy');
+
+Route::get('/autors/{id}', 'AutorController@show')->name('autors.show');
+Route::put('/autors/{id}', 'AutorController@update')->name('autors.update');
+Route::delete('autors/{id}', 'AutorController@destroy')->name('autors.destroy');

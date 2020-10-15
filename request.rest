@@ -4,5 +4,9 @@ Content-Type: application/json
 
 {
     "nombre": "prueba",
-    "apellido": "prueba"
+    "apellido": "pruebaaa",
 }
+
+### GET Autores (index)
+GET http://127.0.0.1:8000/api/autors
+Content-Type: application/json
