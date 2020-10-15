@@ -35,8 +35,10 @@ La manera de instalarlo se describira a continuacion.
 `DB_USERNAME=root` <br>
 `DB_PASSWORD=` <br>
 <br>
+
 7. Una vez configurado la conexion a la base de datos, se deben correr las migraciones: <br>
 `php artisan migrate` <br><br>
+
 8. Y luego solo falta correr el servidor: <br>
 `php artisan serve`
 
