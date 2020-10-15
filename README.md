@@ -7,54 +7,39 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## About Laravel
+## Laravel API Autor-Articulos
+Este proyecto es una API sencilla hecha en Laravel 7.28.4.
+La manera de instalarlo se describira a continuacion.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### Pasos para la instalacion y uso
+1. Clonar el repo con el comando: <br>
+`git clone https://github.com/VM17015/ApiAutor.git` 
+<br><br>
+2. Entrar a la carpeta: <br>
+`cd ApiAutor`
+<br><br>
+3. Ejecutar composer para instalar dependencias:<br>
+`composer install`
+<br><br>
+4. Copiar el archivo '.env.example' para generar un nuevo archivo de variables de entorno: <br>
+`cp .env.example .env`
+<br><br>
+5. Generar la llave de seguridad para el proyecto: <br>
+`php artisan key:generate`
+<br><br>
+6. Dentro de el archivo de variables de se modifican las variables referentes a la base de datos (aca se da un ejemplo):<br>
+`DB_CONNECTION=mysql` <br>
+`DB_HOST=127.0.0.1` <br>
+`DB_PORT=3306` <br>
+`DB_DATABASE=api_autor` <br>
+`DB_USERNAME=root` <br>
+`DB_PASSWORD=` <br>
+<br>
+7. Una vez configurado la conexion a la base de datos, se deben correr las migraciones: <br>
+`php artisan migrate` <br><br>
+8. Y luego solo falta correr el servidor: <br>
+`php artisan serve`
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
 ## License
 
