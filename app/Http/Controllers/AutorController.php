@@ -74,4 +74,9 @@ class AutorController extends Controller
             return response()->json(['error' => 'No content'], 406);
         }
     }
+
+    public function getAutorArticulo($id)
+    {
+
+    }
 }
