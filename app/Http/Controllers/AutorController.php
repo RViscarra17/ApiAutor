@@ -71,12 +71,17 @@ class AutorController extends Controller
             $autor->delete();
             return response()->json($autor, 200);
         } catch (ModelNotFoundException $e) {
-            return response()->json(['error' => 'No content'], 406);
+            return response()->json(['error' => 'No encontrado'], 404);
         }
     }
 
     public function getAutorArticulo($id)
     {
-
+        if ($autor = Autor::find($id)) {
+            $autor->articulos = $autor->articulos;
+            return response()->json($autor);
+        } else {
+            return response()->json(['Error' => 'No encontrado'], 404);
+        }
     }
 }
